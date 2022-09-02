@@ -85,17 +85,16 @@ body {
     flex:1;
     min-height: 800px;
     max-height: 800px;
-    border: 1px solid rgb(192, 192, 192);
     background-color: rgb(248, 248, 248);
     color: black;
+    font-family: "Epilogue", sans-serif;
 }
 
 .introtext {
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 150px;
+    max-height: 150px;
     margin-top: 140px;
     
-    font-family: 'Epilogue', sans-serif;
     font-weight: 600;
     font-size: 18px;
     transform: scale(1,1.1);
@@ -106,13 +105,76 @@ body {
 }
 
 .formbox {
-    min-height: 200px;
-    max-height: 200px;
-    border: 1px solid rgb(192, 192, 192);
+    display: flex;
+    flex:1;
+    min-height: 250px;
+    max-height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.inputfield {
+    display: flex;
+    flex:1;
+    margin: 10px auto auto 30px;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Epilogue", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex:1;
+}
+
+.column {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 5px;
 }
 
 .submitbox {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin-top: 30px;
     min-height: 100px;
     max-height: 100px;
-    border: 1px solid rgb(192, 192, 192);
+}
+
+.submitbox a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+.submitbutton {
+    max-width: 180px;
+    min-height: 40px;
+    max-height: 40px;
+    margin-left: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #596D48;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.submitbutton:hover {
+    background-color: #486429;
+}
+
+.already-signed {
+    margin: 10px 0 0 50px;
 }
