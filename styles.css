@@ -67,6 +67,11 @@ body {
     margin-top: auto;
     text-align: center;
     font-size: 10px;
+    
+}
+
+.imgcredit a {
+    color: white;
 }
 
 .imgcredit a:visited {
