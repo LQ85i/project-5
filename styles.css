@@ -113,6 +113,40 @@ body {
     box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
 }
 
+fieldset {
+    border: none;
+}
+
+input, text {
+    outline: none;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    
+}
+
+
+
+input:focus{
+    border-color: rgb(82, 154, 248);
+    box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.2);
+}
+input.error {
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+.help-password{
+    display:none;
+    color: red;
+    font-family: "Epilogue", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.help-password.error {
+    display: block;
+}
+
 .inputfield {
     display: flex;
     flex:1;
@@ -140,7 +174,16 @@ body {
     flex-direction: column;
     margin-right: 50px;
     padding: 5px;
+    min-height: 40px;
 }
+
+label {
+    color: rgb(65, 65, 65);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
 
 .submitbox {
     display: flex;
@@ -164,7 +207,7 @@ body {
     margin-left: 50px;
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     background-color: #596D48;
     border: 0;
     border-radius: 8px;
@@ -176,5 +219,6 @@ body {
 }
 
 .already-signed {
-    margin: 10px 0 0 50px;
+    margin: 20px 0 0 50px;
+    font-size: 13px;
 }

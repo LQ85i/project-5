@@ -27,31 +27,33 @@
                         <div class="row">
                             <div class="column">
                                 <label for="firstname">FIRST NAME</label>
-                                <input type="text" id="firstname" name="first_name">
+                                <input type="text" id="firstname" name="first_name" required>
                             </div>
                             <div class="column">
                                 <label for="lastname">LAST NAME</label>
-                                <input type="text" id="lastname" name="last_name">
+                                <input type="text" id="lastname" name="last_name" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="column">
                                 <label for="email">EMAIL</label>
-                                <input type="text" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="column">
                                 <label for="phonenumber">PHONE NUMBER</label>
-                                <input type="text" id="phonenumber" name="phone_number">
+                                <input type="tel" id="phonenumber" name="phone_number" pattern="[0-9]+" oninvalid="this.setCustomValidity('Please enter a phone number.')" oninput="this.setCustomValidity('')" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="column">
                                 <label for="password">PASSWORD</label>
-                                <input type="text" id="password" name="password">
+                                <input type="password" id="password" name="password" minlength="7" onkeyup="checkpassword()" required>
+                                <p class="help-password">The passwords do not match!</p>
                             </div>
                             <div class="column">
                                 <label for="confirmpassword">CONFIRM PASSWORD</label>
-                                <input type="text" id="confirmpassword" name="confirm_password">
+                                <input type="password" id="confirm_password" name="confirm_password" minlength="7" onkeyup="checkpassword()" required>
+                                
                             </div>
                         </div>
                     </fieldset>
